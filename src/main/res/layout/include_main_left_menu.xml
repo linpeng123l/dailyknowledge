@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_lly_root"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="start"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/drawer_sdv_user_head"
+            fresco:placeholderImage="@drawable/ic_drawer_user_default"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true"
+            android:onClick="loginClick"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/drawer_tv_user"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/drawer_sdv_user_head"
+            android:layout_below="@+id/drawer_sdv_user_head"
+            android:text="点击头像登录"
+            android:textSize="16sp"
+            android:textColor="@color/drawer_tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/ic_drawer_home_pressed"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="首页"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:background="@color/drawer_divide_line"
+        android:layout_height="1px"/>
+
+    <android.support.v7.widget.CardView
+        android:onClick="collectionClick"
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:src="@drawable/ic_drawer_collect"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="收藏"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:onClick="historyClick"
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:src="@drawable/ic_drawer_history"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="历史"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:onClick="myShareClick"
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:src="@drawable/ic_drawer_myshare"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="我的分享"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:onClick="shareClick"
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:src="@drawable/ic_drawer_share"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="分享"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/drawer_divide_line"
+        />
+
+    <android.support.v7.widget.CardView
+        style="@style/customer_drawerlayout_cv_item"
+        >
+        <LinearLayout
+            style="@style/customer_drawerlayout_llv_item">
+            <ImageView
+                android:src="@drawable/ic_drawer_setting"
+                style="@style/customer_drawerlayout_sdv_item" />
+            <TextView
+                android:text="设置"
+                style="@style/customer_drawerlayout_tv_item" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

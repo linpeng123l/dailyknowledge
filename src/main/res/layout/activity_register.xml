@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.lp.dailyknowlodge.activity.RegisterActivity">
+
+    <include layout="@layout/include_toolbar"/>
+    <EditText
+        style="@style/register_edt_input"
+        android:hint="邮箱" />
+    <EditText
+        style="@style/register_edt_input"
+        android:hint="昵称" />
+    <EditText
+        style="@style/register_edt_input"
+        android:hint="密码" />
+    <EditText
+        style="@style/register_edt_input"
+        android:hint="密码确认" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_btn_login"
+        android:layout_margin="@dimen/dp60"
+        android:onClick="registerClick"
+        style="@style/common_cardbtn_cv"
+        >
+        <LinearLayout
+            style="@style/common_cardbtn_lly"
+            >
+
+            <TextView
+                android:text="@string/register"
+                style="@style/common_cardbtn_tv"
+               />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="divide_line">#cccccc</color>
+
+    <!--drawer color-->
+    <!-- draw item textcolor  -->
+    <color name="drawer_tv_item">#555555</color>
+    <color name="drawer_tv_head">#ffffff</color>
+    <color name="drawer_divide_line">#cccccc</color>
+    <color name="tv_gray">#999999</color>
+    <color name="colorPrimary">#00aeef</color>
+    <color name="foreground_material_light">#1097e5</color>
+    <color name="statusBarColor">#0999f9</color>
+    <color name="background_material_light">#fcfcfd</color>
+    <color name="activityBackground">#ffffff</color>
+
+
+    <!--公共颜色-->
+    <color name="common_ic_back">#555555</color>
+    <color name="common_edt_text_color">#555555</color>
+    <color name="common_edt_hint_text_color">#999999</color>
+</resources>

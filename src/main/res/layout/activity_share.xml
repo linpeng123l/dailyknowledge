@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activityBackground"
+    tools:context="com.lp.dailyknowlodge.activity.ShareActivity">
+    <include layout="@layout/include_toolbar"/>
+    <EditText
+        android:id="@+id/share_edt_subject"
+        android:hint="请输入您想要分享的主题,如果被采用，我们将给于您10元的现金奖励"
+        style="@style/share_edt_input"
+        android:singleLine="false"
+        android:minLines="5"
+        android:gravity="top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/share_edt_contact"
+        android:hint="请输入您的联系方式，便于我们给您反馈"
+        style="@style/share_edt_input" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_btn_login"
+        android:layout_margin="@dimen/dp60"
+        android:onClick="publishClick"
+        style="@style/common_cardbtn_cv"
+        >
+        <LinearLayout
+            style="@style/common_cardbtn_lly"
+            >
+            <TextView
+                android:text="@string/publish"
+                style="@style/common_cardbtn_tv"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
