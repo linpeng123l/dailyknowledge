@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.0 rc3"
+    resourcePrefix "bounceprogressbar__"
 
     defaultConfig {
         applicationId "com.lp.dailyknowlodge"
@@ -32,3 +33,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3'
     compile 'me.imid.swipebacklayout.lib:library:1.0.0'
 }
+def siteUrl = 'https://github.com/zhengxiaopeng/BounceProgressBar' // 项目的主页
+def gitUrl = 'https://github.com/zhengxiaopeng/BounceProgressBar.git' // Git仓库的url

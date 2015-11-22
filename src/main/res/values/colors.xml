@@ -20,6 +20,7 @@
 
     <!--公共颜色-->
     <color name="common_ic_back">#555555</color>
+    <color name="common_text_color">#555555</color>
     <color name="common_edt_text_color">#555555</color>
     <color name="common_edt_hint_text_color">#999999</color>
 </resources>
